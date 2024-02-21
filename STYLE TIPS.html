@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+          
+        }
+
+        
+        img{
+            height: 100px;
+            width: 100%;
+        }
+        .carousel-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        flex: 0 0 300px; /* Fixed size for each slide */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px; /* To make the images square-shaped */
+    }
+
+    .TEXT {
+    position: relative;
+    width: 100%; /* Ensure the container takes up the full width */
+    overflow: hidden; /* Ensure the image and overlay stay within the container */
+}
+
+.TEXT img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Ensure the image is a block element */
+}
+.table-container {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between tables */
+    margin-bottom: 20px; /* Adjust spacing between tables and other content */
+   
+  }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:rgb(173, 0, 0);
+            padding: 10px;
+            border-radius: 8px;
+            opacity: 1; /* Adjust opacity to make sure the text is fully visible */
+            transition: opacity 0.3s ease-in-out;
+            z-index: 1; /* Make sure the overlay is above the image */
+        }
+        table {
+    width: 29%;
+    border-collapse: collapse;
+    margin-left: 50px;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .containerd {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+     /* Adjust the gap between images */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .image-text {
+    margin-top: 10px; /* Adjust the spacing between image and text */
+    color: red;
+  }
+  .comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 20px;
+}
+        .footer {
+            background-color: rgb(69, 98, 128);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html" style="color: white;">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                            <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" style="color: white;">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+               <!--<img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="mdo" width="32"
+                    height="32" class="rounded-circle">--> 
+            </div>
+        </div>
+    </nav><br><br>
+    <img src="https://cdn.pixabay.com/photo/2016/08/26/15/06/home-1622401_1280.jpg" alt=""><br><br>
+    <center><h1 style="color: red;">THE THRILL OF DISCOVERIES</h1></center><br><br><br>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1519961655809-34fa156820ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c29mYXxlbnwwfHwwfHx8MA%3D%3D" alt="Image 1">
+                <p>SOFA</p>
+            </div>
+            <div class="slide">
+                <img src="https://cb2.scene7.com/is/image/CB2/CB2SP24_10D_V2/$web_pdp_main_carousel_md$/240209084806/CB2SP24_10D_V2.jpg" alt="Image 2">
+                <p>MONDOVI BLACK CERAMIC DECORATIVE</p>
+            </div>
+            <div class="slide">
+                <img src="https://cb2.scene7.com/is/image/CB2/2024_0125_HP_tile_floorlamp?wid=538&qlt=75" alt="Image 3">
+                <p>VIEWPOINT ARTICULATING BRASS TASK <br> FLOOR LAMP</p>
+            </div>
+            <div class="slide">
+                <img src="https://cb2.scene7.com/is/image/CB2/2024_0125_HP_tile_lazonecabinet?wid=538&qlt=75" alt="Image 4">
+                <p>LANZONE 10-DRAWER WALNUT  <br>STORAGE CABINET </p>
+            </div>
+            <div class="slide">
+                <img src="https://cb2.scene7.com/is/image/CB2/2024_0125_HP_tile_cairocredenza_re?wid=538&qlt=75" alt="Image 5">
+                <p>CAIRO WARM WHITE HIGH-GLOSS  <br>LACQUERED CREDENZA 72"</p>
+            </div>
+            <div class="slide">
+                <img src="https://cb2.scene7.com/is/image/CB2/2024_0125_HP_tile_hornwallmirror?wid=538&qlt=75" alt="Image 6">
+                <p>HORN BLACK ROUND WALL MIRROR</p>
+            </div>
+            <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2014/05/02/12/45/ceiling-lamp-335975_640.jpg" alt="Image 7">
+                <p>CEILING LAMP BULBS</p>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/1129413/pexels-photo-1129413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 8">
+                <p>BROWN WODEN VASE NEAR THE WINDOW</p>
+            </div>
+            <div class="slide">
+                <img src="https://cb2.scene7.com/is/image/CB2/March_23_Marquee_Rugs_1?wid=680&qlt=75" alt="Image 9">
+                <p>EROS HAND KNOTED RED AND BLUE AREA RUGS</p>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/462235/pexels-photo-462235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 10">
+                <p>POSTERS MOUNTED ON WALL</p>
+            </div>
+            <div class="slide">
+                <img src="https://www.aestheticroomcore.com/cdn/shop/products/1_ed75dcec-aca7-4c0d-827d-4bd65c2e5cd4_360x.jpg?v=1629387654" alt="Image 11">
+                <p>COTTOGECORE PILLOW CASE</p>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1615803796379-b4cda8e9c09c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 12">
+                <p>MODERN WHITE AND BROWN WOODEN</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+        <div class="TEXT">
+            <img src="https://media.istockphoto.com/id/1425142484/photo/3d-renders-of-a-luxurious-dining-room-area-design.jpg?s=2048x2048&w=is&k=20&c=eltwA6zSTRmBKVTMdOeAYk0kVycqGlqNgI-YoSBR4Ds=" alt="Image" style="width: 100%;">
+            <div class="text-overlay"><h1><b>Transform your space with timeless elegance!</b></h1></div>
+        </div><br><br>
+        <!--tips exp-->
+        <center ><h1 style="color: rgb(77, 185, 77);"><b>Decorating Styles and Themes</b></h1>
+        <p>No matter your decor style, we have ideas that teach you how to use furniture, color, and decor to your advantage for whatever theme you're  <br>going for. Decorate in traditional style, modern minimalism, you'll find inspiration here for every style.</p></center>
+        <br><br>
+        <center>
+        <div class="table-container">
+        <!--tab1-->
+          <table>
+            <tr>
+              <th style="text-align: center;">Dsign & Decorate</th>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/ac-salone-08-1-65c10fdbc09a9.jpg?crop=1.00xw:0.667xh;0,0.276xh&resize=1200:*" alt="Image 1" style="height: 200px;width: 200px; float: inline-start;"> A piece of that talk-of-the-town showcase is now making its way to New York City at a new design gallery on Park Avenue.</p>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/ac-salone-09-1-65c118fb671d8.jpg?resize=980:*" alt="Image 2"style="height: 200px;width: 200px; float: inline-start;">The new mother-of-pearl editions of the Sofia chair and Camilla desk. <br> No matter your style, we've got you covered.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;" ><img src="https://hips.hearstapps.com/hmg-prod/images/lanai-kailua-81500-roomshot-print-hr-1-65bacbdb4a6cb.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt="Image 3" style="height: 200px;width: 200px; float: inline-start;">HERE ARE THE BIGGEST TRENDS WE SPOTTED AT THE ‘COUTURE WEEK’ OF INTERIORS</p>
+                
+              </td>
+            </tr>
+          </table>
+          <!--tab2-->
+          <table>
+            <tr>
+              <th style="text-align: center;"> Design Styles</th>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/ahr0xpze-65b2cb25c7a8e.jpeg?resize=980:*" alt="Image 1" style="height: 200px;width: 200px; float: inline-start;">A new wallcovering from Lori Weitzner uses mulberry wood to create a latticelike effect on a surface.</p>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/rubelli-gardens-by-formafantasma-iris-grasshopper-65b2af6a15f3b.jpeg?resize=980:*" alt="Image 2"style="height: 200px;width: 200px; float: inline-start;"><b>Yellow Is an Early Color of the Year</b> <br> Rubelli, under the creative direction of Italian design duo, unveiled a collection of fabrics, including a pastel yellow.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;" ><img src="https://hips.hearstapps.com/hmg-prod/images/etodhunter-govi-mainbath-65b8098b826e8.jpg?crop=1.00xw:0.757xh;0,0.127xh&resize=1200:*" alt="Image 3" style="height: 200px;width: 200px; float: inline-start;">One of the most surprising ways to craft a splashy design visual is with cool closet doors. Since they can take up so much visual space in a room</p>
+                
+              </td>
+            </tr>
+          </table>
+          <!--tab3-->
+          <table>
+            <tr>
+              <th style="text-align: center;">Trends</th>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/dedar-2024-011-65b2bef6ecb8d.jpg?resize=980:*" alt="Image 1" style="height: 200px;width: 200px; float: inline-start;">A series of new tiger print fabrics from Dedar play with the classic animal print motif. <br>Designers will clearly be embracing the wild side in the year ahead. </p>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/edc110123wearstler-extras-006-652ff948f186f.jpg?crop=1.00xw:0.801xh;0,0.124xh&resize=1200:*" alt="Image 2"style="height: 200px;width: 200px; float: inline-start;">The primary room in the Future Perfect’s new gallery/home in Los Angeles features an enveloping custom chocolate-brown wall paint.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;" ><img src="https://hips.hearstapps.com/hmg-prod/images/edc040123hunter-007-6408d0129df5a.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3" style="height: 200px;width: 200px; float: inline-start;"><b>BE OPEN TO FUN</b> <br>Dining set with a an oversized lantern, hand-painted by local Los Angeles artist Jeffrey Cheung. If you’re feeling created, you can DIY your own design.</p>
+                
+              </td>
+            </tr>
+          </table>
+        </div>
+    </center>
+        <br><br>
+       <center><b> <h2 style="color: rgb(68, 155, 68);">Transforming spaces, inspiring lives: the art of interior elegance </h2></b></center><br>
+        <div class="containerd">
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/edc040123harris-004-6407a6f579c8a.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 1">
+              <div class="image-text">MATCH YOUR WALLS TO YOUR SOFA</div>
+            </div>
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/edc050123studiokenyon-001-643071e0cf609.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 2">
+              <div class="image-text">OPT FOR AN ANALOGOUS COLOR SCHEME</div>
+            </div>
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/edc100123charlaphymanherrero-007-64ff4ae9e5427.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3">
+              <div class="image-text">INCORPORATE UNEXPECTED MATERIALS</div>
+            </div>
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/edc050123hoffman-003-643590c6e599b.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 4">
+              <div class="image-text">MIX OLD AND NEW</div>
+            </div>
+          </div><br><br>
+          <!--next table-->
+          <center style="color: rgb(68,155,68);"><b><h2>Inspiration meets innovation: where design dreams come to life</h2></b></center><br>
+          <div class="table-container">
+          <table>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/edc040121grattan-010-1615409333.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 1" style="height: 200px;width: 200px; float: inline-start;"><b>KEEP ORGANIZATION FRONT AND CENTER</b> <br>Racks of spice jars and sets of bowls filled keeping things organized.</p>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/edc090123grattan-004-64c7ea95500f6.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 2"style="height: 200px;width: 200px; float: inline-start;"><b>INCORPORATE STATEMENT PLANTS</b> <br>There’s nothing more aesthetic than an oversized arrangement.The mini side table is the perfect touch for holding incense.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;" ><img src="https://hips.hearstapps.com/hmg-prod/images/edc090123gonalons-004-64c9763065edf.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3" style="height: 200px;width: 200px; float: inline-start;"><b>CONSIDER UNCONVENTIONAL ARRANGEMENTS</b> <br>Duplex sing with his custom banquette, twin tables, and chairs in the dining room. You can get the look at home.</p>
+                
+              </td>
+            </tr>
+          </table>
+          
+          <table>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/david-lucido-la-house-06-654d556e83d5b.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 1" style="height: 200px;width: 200px; float: inline-start;"><b>MATCH YOUR CEILING TO YOUR FLOORING</b> <br>Ceiling that picks up the earthy tones in the floor tiles. The cocooning effect keeps the focus on the room’s architectural </p>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/edc030122house-call-cotton-005-1644256667.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 2"style="height: 200px;width: 200px; float: inline-start;"><b>MIX AND MATCH PATTERNS</b> <br>The bed skirt is a contrasting floral fabric to the headboard, which is upholstered in the same striped fabric as the side chair.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;" ><img src="https://hips.hearstapps.com/hmg-prod/images/img-1995-1636638855.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3" style="height: 200px;width: 200px; float: inline-start;"><b>USE PAINT TO BREAK UP A SPACE</b><br>Open-floor plan space by creating a room within a room, lacquered in green paint. Built-in nooks add visual interest as well as storage.</p>
+                
+              </td>
+            </tr>
+          </table>
+          
+          <table>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/edc010113milan02-656e32d17c8f6.jpg?resize=980:*" alt="Image 1" style="height: 200px;width: 200px; float: inline-start;"><b>Aquatic Theme</b> <br> The room features Fornasetti's Corallo wallpaper, setting a serene backdrop. Complementing the ambiance, a stylish bar cart and chair complete the ensemble.</p>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;"><img src="https://hips.hearstapps.com/hmg-prod/images/edc010113milan07-656e318195bde.jpg?resize=980:*" alt="Image 2"style="height: 200px;width: 200px; float: inline-start;"><b>Dining Décor Delight</b>A sleek convex mirror and a custom-designed guitar add unique touches, alongside a vintage painting on the wall.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p style="text-align: left;justify-content: first baseline;" ><img src="https://hips.hearstapps.com/hmg-prod/images/screen-shot-2024-01-25-at-12-40-35-pm-65b29d15c2f83.png?crop=1xw:1xh;center,top&resize=980:*" alt="Image 3" style="height: 200px;width: 200px; float: inline-start;"><b>COLOR ON NEUTRAL</b> <br>This artwork by Doug Aitken gives the rest of the neutral space a modern twist that creates contrast in the surrounding wood architecture.</p>
+                
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--<div class="TEXT">
+            <img src="https://images.pexels.com/photos/6587823/pexels-photo-6587823.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image" style="width: 100%;">
+            <div class="text-overlay"><h1><b>"Inspiration meets innovation: where design dreams come to life."
+            </b></h1></div>
+        </div><div class="TEXT">
+            <img src="https://images.pexels.com/photos/7061395/pexels-photo-7061395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image" style="width: 100%;">
+            <div class="text-overlay"><h1><b>"Transforming spaces, inspiring lives: the art of interior elegance."</b></h1></div>
+        </div>-->
+
+        <div class="containerd">
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/screen-shot-2024-01-25-at-12-10-17-pm-65b295fc7cff7.png?crop=1xw:1xh;center,top&resize=980:*" alt="Image 1" style="width: 250px;height: 250px;">
+              <div class="image-text">ECLECTIC FLAIR</div>
+            </div>
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/2021-10-12-workshopapd-readmckendree-0069-a-v1-1656424370.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Image 2" style="width: 250px;height: 250px;">
+              <div class="image-text">HIP AND HANGING</div>
+            </div>
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/tacile-textures-1646321200.jpeg?resize=980:*" alt="Image 3" style="width: 250px;height: 250px;">
+              <div class="image-text">TACTILE TEXTURES</div>
+            </div>
+            <div class="image-container">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/flexible-1646321305.jpg?resize=980:*" alt="Image 4" style="width: 250px;height: 250px;">
+              <div class="image-text">FLEXIBLE, NOT FINITE</div>
+            </div>
+          </div><br><br>
+          <!--comments-->
+          <div class="comments-container">
+            <h2> Your Comment</h2>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div>
+                    <label for="comment">Write Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div><br>
+                <button type="submit">Submit</button><br><br>
+            </form>
+            <ul id="comments-list"> <h1><b>Comments</b></h1></ul>
+        </div>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.slide');
+        
+        let currentIndex = 0;
+        
+        function nextSlide() {
+          currentIndex++;
+          if (currentIndex >= slides.length) {
+            currentIndex = 0;
+          }
+          updateCarousel();
+        }
+        
+        function updateCarousel() {
+          const offset = -currentIndex * 25; /* 25% for each slide */
+          carousel.style.transform = `translateX(${offset}%)`;
+        }
+        
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+
+
+//localStorage.removeItem('comments');
+document.addEventListener('DOMContentLoaded', function() {
+        const commentsList = document.getElementById('comments-list');
+        const commentForm = document.getElementById('comment-form');
+    
+        // Load comments from local storage on page load
+        loadComments();
+    
+        // Event listener for form submission
+        commentForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+    
+            // Save comment to local storage
+            saveComment(name, comment);
+    
+            // Add new comment to UI below the form
+            const newCommentHTML = `<li><strong>${name}:</strong> ${comment}</li>`;
+            commentsList.insertAdjacentHTML('beforeend', newCommentHTML);
+    
+            // Clear form fields
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+    
+        // Function to load comments from local storage
+        function loadComments() {
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.forEach(comment => {
+                const newComment = document.createElement('li');
+                newComment.innerHTML = `<strong>${comment.name}:</strong> ${comment.comment}`;
+                commentsList.appendChild(newComment);
+            });
+        }
+    
+        // Function to save comment to local storage
+        function saveComment(name, comment) {
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.push({ name, comment });
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+    });
+    </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="margin-bottom: 5px;">The Inspired Decor</p>
+            <p style="margin-bottom: 5px;">123 Example Street, City</p>
+            <p style="margin-bottom: 0;">&copy; 2023 Decor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+  
+</body>
+
+</html>

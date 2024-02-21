@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 100px;
+        }
+
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+          
+        }
+h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: #28913b;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+         #left-section {
+            width: 30%;
+        }
+
+        #right-section {
+            width: 60%;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .winter-paragraph {
+            text-align: center;
+            color: #333;
+        }
+
+        #winter-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        #left-section {
+            width: 50%;
+            float: left;
+        }
+
+        #right-section {
+            width: 50%;
+            float: left;
+        }
+
+        hr {
+            border: 1px solid #673737;
+            margin: 20px 0;
+            width: 52%;
+        }
+
+        .winter-paragraph {
+            text-align: left;
+            color: #333;
+        }
+
+        .image-collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 150px; /* Set a fixed height for the image cards */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%; /* Set the height of the images to 70% of the .image-card height */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover .image {
+            transform: scale(1.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .box {
+            width: calc(25% - 20px);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .box img {
+            width: 100%;
+            height: 50%;
+            margin-bottom: 10px;
+        }
+
+        .box h3 {
+            margin: 10px 0;
+        }
+
+        .box hr {
+            width: 50%;
+            margin: 10px auto;
+            border: 1px solid #673737;
+        }
+
+        .box p {
+            color: #666;
+        }
+        .comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 20px;
+}
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img src="" alt="" style="height: 60px; "></a>
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html" style="color: white;">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                            <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" style="color: white;">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+                <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="mdo" width="32"
+                    height="32" class="rounded-circle">
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <center><h1><i>Get inspired for your home in every season!</i></h1></center>
+    <br>
+    
+        <!-- winter season -->
+        <div id="left-section">
+            <!-- Winter season home decor content on the left side -->
+            <h2>Winter Season Home Decor</h2>
+            <hr>
+            <!-- Winter season home decor paragraph and image on the right side -->
+            <div class="winter-paragraph">
+                <p>"Indulge in the enchanting allure of winter as our decor  collection  <br>weaves a tapestry of unique charm,unique and aesthetic brilliance. <br>Immerse  your surroundings in the subtle dance  of snowflakes,<br> complemented by the warmth of ambient lighting.  Elevate your <br> home into  a haven of distinctive elegance, where every corner <br>  tells  a story of winter's timeless beauty."</p>
+            </div>
+            
+        </div>
+        
+        <div class="image-collage">
+            <!-- Four images with card effect and hover effect -->
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_640.jpg" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2018/10/28/12/37/bedroom-3778695_640.jpg" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2015/12/05/23/16/office-1078869_640.jpg" alt="Image 3">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2014/12/27/14/37/living-room-581073_640.jpg" alt="Image 4">
+            </div>
+        </div> <br><br>
+        <!--code of winter season other-->
+        <div class="container">
+            <!-- Four divs with centered image, h3, hr, and paragraph -->
+            <div class="box">
+                <img src="https://theinspiredroom.net/wp-content/uploads/2023/11/cozy-breakfast-nook-candle-sconces-chandelier-lampshades-cafe-curtains-dark-brown-walls.jpeg" alt="Image 1">
+                <h3>Warm and Cozy Ambience</h3>
+                <hr>
+                <p>Flicker of candlelight! Whether you use real or battery candles <br>(I shared several of my recent favorite battery candles here), the warm glow of candlelight makes such an impact on how a room feels. Enjoy the inspiration!</p>
+            </div>
+            <div class="box">
+                <img src="https://theinspiredroom.net/wp-content/uploads/2023/11/blue-white-holiday-decorating-tablescape-gingerbread-house-appetizer-plate-the-inspired-room.jpg" alt="Image 2">
+                <h3>Winter Table Dining Nook</h3>
+                <hr>
+                <p>In the heart of our home, nestled within the cozy embrace of winter, our dining nook transforms into a winter wonderland. The table becomes a canvas for seasonal charm, adorned with elegant winter-themed decor.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1616593918824-4fef16054381?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" alt="Image 3">
+                <h3>A Cozy Corner of Knowledge</h3>
+                <hr>
+                <p>In a sunlit room, books stand proudly on shelves, creating a cozy haven for literary exploration. A simple table and chair invite introspection, while sun rays streaming through the window add warmth to this tranquil sanctuary of knowledge and stories.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" alt="Image 4">
+                <h3>Ephemeral Elegance Artful Harmony</h3>
+                <hr>
+                <p>Walls adorned with paintings and photographs create a visual symphony of colors and memories. Each carefully curated piece tells a unique tale, weaving together an immersive atmosphere of beauty, nostalgia, and artistic expression.</p>
+            </div>
+        </div>
+    <br><br>
+        <!-- Spring season -->
+        <div id="left-section">
+            <!-- Winter season home decor content on the left side -->
+            <h2>Spring Season Home Decor</h2>
+            <hr>
+            <!-- Spring season home decor paragraph and image on the right side -->
+            <div class="winter-paragraph">
+                <p>"As spring blooms, our homes come alive with fresh decor. <br> Delicate florals and pastel palettes embrace every corner, <br> creating an airy, rejuvenating atmosphere. Nature-inspired <br>  accents seamlessly blend the beauty of the outdoors with <br> our ideas of indoor sanctuaries."</p>
+            </div>
+            
+        </div>
+        
+        <div class="image-collage">
+            <!-- Four images with card effect and hover effect -->
+            <div class="image-card">
+                <img class="image" src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2016/09/19/17/20/home-1680800_1280.jpg" alt="Image 3">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2017/08/02/01/01/living-room-2569325_640.jpg" alt="Image 4">
+            </div>
+        </div> <br><br>
+        <!--code of winter season other-->
+        <div class="container">
+            <!-- Four divs with centered image, h3, hr, and paragraph -->
+            <div class="box">
+                <img src="https://theinspiredroom.net/wp-content/uploads/2023/05/front-covered-porch-adirondack-chair-blue-white-rug-cafe-table-inspired-room.jpg" alt="Image 1">
+                <h3>Serene Terrace Retreat</h3>
+                <hr>
+                <p>Amidst the gentle rustle of trees, a cozy chair adorned with cushions invites repose. Dog rugs add warmth, and nature's beauty unfolds with a breathtaking view outside. This tranquil haven seamlessly blends comfort, companionship, and the allure of the great outdoors.</p>
+            </div>
+            <div class="box">
+                <img src="https://theinspiredroom.net/wp-content/uploads/2023/03/spring-kitchen-tulips-island-navy-blue-white-subway-tile.jpg" alt="Image 2">
+                <h3>Contemporary Kitchen Bloom</h3>
+                <hr>
+                <p> In the heart of the home, a kitchen adorned in a chic new style unfolds. A graceful flower garland delicately hangs, introducing a burst of vibrant colors against a backdrop of serene blue and crisp white hues. A simple table, adorned with two inviting cushions, becomes a stylish haven.</p>
+            </div>
+            <div class="box">
+                <img src="https://theinspiredroom.net/wp-content/uploads/2022/03/door-basket-scalloped-simple-spring-decorating-wythe-blue-benjamin-moore-the-inspired-room-coastal-new-england-style.jpg" alt="Image 3">
+                <h3>A Stairway to Elegant Living</h3>
+                <hr>
+                <p> A door adorned with hanging flowers welcomes you into a space of refined aesthetics. Ascending the stairs, framed pictures grace the walls, narrating tales of cherished memories. Below, an address takes center stage, while on the dressing lamp.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" alt="Image 4">
+                <h3>Enchanting Elegance</h3>
+                <hr>
+                <p>In this stunning living room, beauty unfolds with every detail. Elegant furnishings, tasteful decor, and a harmonious color palette create a space that exudes sophistication and charm. From plush furniture to curated accents.</p>
+            </div>
+        </div>
+        <br><br>
+        <!-- Summer season -->
+        <div id="left-section">
+            <!-- Summer  season home decor content on the left side -->
+            <h2>Summer Season Home Decor</h2>
+            <hr>
+            <!-- Summer  season home decor paragraph and image on the right side -->
+            <div class="winter-paragraph">
+                <p>Summer vibes infuse our home with a burst of color and vitality. <br> Tropical prints, airy textiles, and sunlit accents bring a refreshing <br> touch to every room. Embrace the season's warmth with a  blend <br> of vibrant decor that mirrors the carefree spirit of summer days."</p>
+            </div>
+        </div>
+        <div class="image-collage">
+            <!-- Four images with card effect and hover effect -->
+            <div class="image-card">
+                <img class="image" src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://images.pexels.com/photos/4112237/pexels-photo-4112237.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 3">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 4">
+            </div>
+        </div> <br><br>
+        <!--code of winter season other-->
+        <div class="container">
+            <!-- Four divs with centered image, h3, hr, and paragraph -->
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/961922854/photo/cozy-reading-room-interior.webp?s=170667a&w=0&k=20&c=CYaAyiew2nv_nE9fFH3J76GUOKJlHvSR2RbKtLcg-jI=" alt="Image 1">
+                <h3>Summer Bliss: A View-Framed Haven</h3>
+                <hr>
+                <p>A cozy sofa, book-filled rack, and thoughtfully adorned space invite serenity. With a beautiful view outside, this corner becomes a summer sanctuary where nature's beauty meets curated elegance. Embrace the season's warmth with a curated blend of vibrant decor.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.pexels.com/photos/3636957/pexels-photo-3636957.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 2">
+                <h3>A Dining Retreat with a View</h3>
+                <hr>
+                <p> Step into a sanctuary of summer serenity where a stylish dining area beckons. Adorned with tasteful decor, this room offers a tranquil escape for delightful meals. Through the window, a captivating summer view unfolds, creating a perfect harmony between indoor comfort and the beauty of the season.</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg" alt="Image 3">
+                <h3>Modern Serenity Elegant Living</h3>
+                <hr>
+                <p>In our contemporary living space, a sleek gray sofa takes center stage, complemented by a straight, imposing floor lamp that casts a warm glow. The ceiling painting adds a touch of artistic flair, echoing the harmony of modern design a tranquil haven where sophistication meets comfort.</p>     
+            </div>
+            <div class="box">
+                <img src="https://images.pexels.com/photos/19685796/pexels-photo-19685796/free-photo-of-bright-cozy-bedroom-in-a-traditional-house-with-a-patio.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image 4">
+                <h3>Whispers of Summer: The Tranquil Solitude </h3>
+                <hr>
+                <p>A solitary bed, adorned with white curtains that dance with the summer breeze, stands as the centerpiece in this serene space. The window behind unveils a scenic tableau, while a minimalist corner, featuring a small johmer and a chair, invites moments of contemplation. </p>
+            </div>
+        </div><br><br>
+        <!-- Autumn season -->
+        <div id="left-section">
+            <!-- Autumn  season home decor content on the left side -->
+            <h2>Autumn Season Home Decor</h2>
+            <hr>
+            <!-- Autumn  season home decor paragraph and image on the right side -->
+            <div class="winter-paragraph">
+                <p>"As autumn's embrace unfolds, our homes become a canvas of <br> warm  hues and cozy textures. Rich tones of rust and gold adorn  <br> pillows and throws, creating an inviting atmosphere. Candles of  <br> flicker, and nature-inspired accents bring the essence of fall that <br> indoors, transforming each corner into a haven of autumnal charm."</p>
+            </div>
+        </div>
+        <div class="image-collage">
+            <!-- Four images with card effect and hover effect -->
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2016/04/18/08/50/kitchen-1336160_640.jpg" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_1280.jpg" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg" alt="Image 3">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://cdn.pixabay.com/photo/2014/08/11/21/39/wall-416060_1280.jpg" alt="Image 4">
+            </div>
+        </div> <br><br>
+        <!--code of Autumn season other-->
+        <div class="container">
+            <!-- Four divs with centered image, h3, hr, and paragraph -->
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2017/03/28/12/13/chairs-2181968_1280.jpg" alt="Image 1">
+                <h3>Modern Symmetry</h3>
+                <hr>
+                <p>Chic dining setting: Circular table adorned with pastel abstract art, a harmonious blend of monochrome elegance, and the beauty of contrasting black and white furnishings.</p>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/1387655352/photo/orange-colored-modern-living-room-pastel-colors-sofa-armchair-carpet-coffee-tables-frosted.jpg?s=612x612&w=0&k=20&c=JhXrlHSDZAztLdAyl4aut3JjJlx4Dj1-7dfrJ2RNApM=" alt="Image 2">
+                <h3>Contemporary Fusion</h3>
+                <hr>
+                <p> In a modern living space, creating an inviting ambiance. Stylish furnishings, plush cushions, and a luxurious carpet provide comfort, copper lamps design.</p>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/1284479466/photo/work-from-home-office-with-potted-house-plants.jpg?s=2048x2048&w=is&k=20&c=dTNHtdzVN9-ocUIh4XZOfH4J7jCAn3ig2ZON9V4cPbk=" alt="Image 3">
+                <h3>Workspace Haven</h3>
+                <hr>
+                <p>A desk, adorned with a sleek laptop, becomes a haven for productivity. The accompanying chair, a comfortable retreat, invites focus and creativity. Potted plants add a touch of nature,  beauty of greenery.</p>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/980851522/photo/girls-home-office-interior.jpg?s=612x612&w=0&k=20&c=zqjUEBgkMf3yXcP1ROJZ8xPkuHZvMh70Ee5XWHEMg1k=" alt="Image 4">
+                <h3>Chic Home Office Retreat</h3>
+                <hr>
+                <p> In the girl's home office, a sleek black chair at the desk hosts a laptop, creating a stylish and functional workspace. Leaves posters and a flourishing.</p>
+            </div>
+        </div><br>
+        <div class="comments-container">
+            <h2> Your Comment</h2>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div>
+                    <label for="comment">Write Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div><br>
+                <button type="submit">Submit</button><br><br>
+            </form>
+            <ul id="comments-list"> <h1><b>Comments</b></h1></ul>
+        </div>
+        
+        <script>
+            //localStorage.removeItem('comments');
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentsList = document.getElementById('comments-list');
+            const commentForm = document.getElementById('comment-form');
+        
+            // Load comments from local storage on page load
+            loadComments();
+        
+            // Event listener for form submission
+            commentForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const comment = document.getElementById('comment').value;
+        
+                // Save comment to local storage
+                saveComment(name, comment);
+        
+                // Add new comment to UI below the form
+                const newCommentHTML = `<li><strong>${name}:</strong> ${comment}</li>`;
+                commentsList.insertAdjacentHTML('beforeend', newCommentHTML);
+        
+                // Clear form fields
+                document.getElementById('name').value = '';
+                document.getElementById('comment').value = '';
+            });
+        
+            // Function to load comments from local storage
+            function loadComments() {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.forEach(comment => {
+                    const newComment = document.createElement('li');
+                    newComment.innerHTML = `<strong>${comment.name}:</strong> ${comment.comment}`;
+                    commentsList.appendChild(newComment);
+                });
+            }
+        
+            // Function to save comment to local storage
+            function saveComment(name, comment) {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.push({ name, comment });
+                localStorage.setItem('comments', JSON.stringify(comments));
+            }
+        });
+        </script>
+    <!--Footer-->
+<footer style="background-color: rgb(69, 98, 128); padding: 20px; text-align: center; color: white; width: 100%; position: absolute;">
+    <div class="containerd">
+      <p style="margin-bottom: 5px;">Tech&Gads</p>
+      <p style="margin-bottom: 5px;">123 Example Street, City</p>
+      <p style="margin-bottom: 0;">&copy; 2023 Tech&Gads. All rights reserved.</p>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+</body>
+</html>
