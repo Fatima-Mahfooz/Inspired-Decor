@@ -92,17 +92,15 @@
         }
         .outer-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
         }
 
         .left-side {
-    width: 40%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    overflow: hidden; /* Prevent overflow */
-    float: left; /* Add float left to align the image properly */
-}
+            width: 40%;
+            margin-bottom: 20px;
+        }
 
 .left-side img {
     width: 100%; /* Ensure the image fits within its container */
@@ -111,10 +109,8 @@
 
 .right-side {
     width: 50%;
-    margin-bottom: 20px;
-    overflow: hidden; /* Prevent overflow */
-    padding: 20px;
-    float: left; /* Add float left to align the content properly */
+    margin-bottom: 10px;
+    
 }
 
 .right-side img {
@@ -154,9 +150,56 @@
             bottom: 0;
             width: 100%;
         }
-        /* Default styles */
+       
+        
+        @media screen and (max-width: 768px) {
+        .lef-A, .rig-A {
+            width: 100%;
+            height: auto;
+        }
 
+        .rig-A {
+            padding: 10px;
+        }
 
+        .center-container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .image-container {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+        }
+
+        .containerd .col-lg-6 {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .outer-container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .left-side {
+            text-align: center;
+        }
+
+        .right-side {
+            text-align: center;
+        }
+
+        .left-side img, .right-side img {
+            width: 100%;
+            height: auto;
+        }
+    }
         
     </style>
     <title>www.The Inspired Decor.com</title>
