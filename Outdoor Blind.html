@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+          
+        }
+        #left-section {
+            width: 30%;
+        }
+
+        #right-section {
+            width: 60%;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .winter-paragraph {
+            text-align: center;
+            color: #333;
+        }
+
+        #winter-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        #left-section {
+            width: 50%;
+            float: left;
+        }
+
+        #right-section {
+            width: 50%;
+            float: left;
+        }
+
+        hr {
+            border: 1px solid #673737;
+            margin: 20px 0;
+            
+        }
+
+        .winter-paragraph {
+            text-align: left;
+            color: #333;
+        }
+
+        .image-collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 150px; /* Set a fixed height for the image cards */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%; /* Set the height of the images to 70% of the .image-card height */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover .image {
+            transform: scale(1.1);
+        }
+        .containerd {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+     /* Adjust the gap between images */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .image-text {
+    margin-top: 10px; /* Adjust the spacing between image and text */
+    color: red;
+  }
+  .carousel-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        flex: 0 0 300px; /* Fixed size for each slide */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px; /* To make the images square-shaped */
+    }
+  .comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 20px;
+}
+        .footer {
+            background-color: rgb(69, 98, 128);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img src="" alt="" style="height: 60px; "></a>
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html" style="color: white;">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                          <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                          <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Blinds
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Roller Blinds.html">Roller Blinds</a></li>
+                            <li><a class="dropdown-item" href="Roman Blind.html">Roman Blind</a></li>
+                            <li><a class="dropdown-item" href="Outdoor Blind.html">Outdoor Blind</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" style="color: white;">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+                <div class="dropdown text-end" style="margin-right: 2%;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="margin-right: 100px ;">
+                      <li><a class="dropdown-item" href="signout.html">Sign out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <center><h1><i><b>Why should your house have exterior shades?</b></i></h1></center>
+    <br>
+    
+        <!-- Roller Blind -->
+        <div id="left-section">
+            <!-- Winter season home decor content on the left side -->
+            <h2 style="color: rgb(153, 46, 46);">&nbsp;&nbsp; Outdoor & Allusion Blinds</h2 >
+            <h3>&nbsp;&nbsp; A Durable & Effective Solution <br>&nbsp;&nbsp; A Touch Of Elegance</h3>
+            <hr width="600px">
+            <!-- Practical & Beautiful home decor paragraph and image on the right side -->
+            <div class="winter-paragraph">
+                <p>&nbsp;&nbsp;"Attain optimal durability, control over light, and energy efficiency. Our outdoor blinds <br>&nbsp;&nbsp; and shades  are an excellent option for your outside windows, decks, porches, patios, <br>&nbsp;&nbsp; and more thanks to their flawless custom fit, high-quality materials, and hardware.<br>&nbsp;&nbsp; Our blinds preserve your lovely outside views while blocking off glare, UV radiation,<br>&nbsp;&nbsp; and strong sunshine."</p>
+            </div> 
+        </div>
+        
+        <div class="image-collage">
+            <!-- Four images with card effect and hover effect -->
+            <div class="image-card">
+                <img class="image" src="https://images.unsplash.com/photo-1509233869195-255224abe73a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWxsdXNpb24lMjBibGluZHN8ZW58MHx8MHx8fDA%3D" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://media.istockphoto.com/id/149958761/photo/chess-on-table.webp?s=170667a&w=0&k=20&c=-OE0GGyOnPwy0d6KlUmNXBG_F15geykbCBZMT39IjEs=" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://images.unsplash.com/photo-1512853566725-a4b1d35bf3b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8" alt="Image 3">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://images.unsplash.com/photo-1528502043423-9149c2023296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8" alt="Image 4">
+            </div>
+        </div> <br><br>
+        <center><h1 style="color: red;">THE THRILL OF DISCOVERIES</h1></center><br><br><br>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/bamboo-blinds-inspired-decor-image-03.jpg"Image 1>
+
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/allusion-blinds-inspired-decor-image-03.jpg" alt="Image 2">  
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/allusion-blinds-inspired-decor-image-01.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/allusion-blinds-inspired-decor-image-04.jpg" alt="Image 4">
+                
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/allusion-blinds-inspired-decor-image-05.jpg" alt="Image 5">
+              
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/ourdoor-blinds-image-01-inspired-decor.jpg" alt="Image 6">
+                
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/ourdoor-blinds-image-02-inspired-decor.jpg" alt="Image 7">
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/ourdoor-blinds-image-04-inspired-decor.jpg" alt="Image 8">
+          
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2024/02/CHANNEL-X-BLIND.jpg" alt="Image 9">
+            </div>
+    </div><br><br><br>
+        <!--1left-->
+    <center><h2 style="color: black;margin-left: 90px;"> <b>Features of Outdoor & Allusion Blinds</b></h2></center><br>
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">Free Hang Blinds</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;"> You can motorize your blind or use a detachable crank handle to raise and lower it. A variety of hold-down clips are used to fix the blind at the bottom, allowing it to stay down in windy conditions. Because a Free Hang patio blind shields you from the sun's heat and glare, it's a great way to make more use of your outdoor leisure spaces. <br> <b>Tips to note:</b>where the hold-down method cannot be used to keep the blind in place when it is fully lowered and if the outdoor space needs complete weather protection (there are other solutions available).</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2024/02/FREE-HANG-BLIND-1.jpg" class="img-fluid" alt="Featurette Image" style="height: 300px;margin-left: 70px; width: 530px;">
+            </div>
+        </div>
+    </div>
+    <!--2left-->
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">Channel X Blinds</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">Slidetrack blinds, sometimes referred to as Channel X outdoor blinds, have side channels that enclose the blind. This results in a wall-to-wall finish, improved insulation, and weather protection, as well as a safer way to raise and lower the blind.Channel X is good for providing some weather protection for your outdoor space while also reducing sun and glare. <br><b>Tips to note:</b>Steer clear of apertures that aren't precisely square or that have skirtings or stepped tiles blocking them. It should be noted that the cloth may occasionally be blown out of the channel by strong winds, thus it cannot always be kept inside. </p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://optimise2.assets-servd.host/taboo-siskin/production/images/Allusion-Blinds/Product-Images/LL_Allusion_Vista_Snow_Main-4-panes_MAIL-3.jpg?w=1920&h=1080&q=80&fm=jpg&fit=min&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1603728899&s=1521253cd833a94045a2fb0303f94355" class="img-fluid" alt="Featurette Image" style="height: 300px; width: 530px; margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <!--3left-->
+    
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">The Style Option That Is More Affordably Priced</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">Larger windows and bi-folding doors are where Allusion blinds really shine because of their distinctive flowing fabric vanes, which let you enjoy privacy and light at the same time.
+                        Select from two exquisite <a href="https://www.tropicalblinds.com/blinds/allusion-blinds/">fabric collections</a> that are tailored to fit any style, color palette, or need for shading.
+                        <br><b>Horizon:</b> A blend of sheer and textured knit fabric in soothing, neutral hues.
+                         <br><b>Vista</b> flame-retardant variety featuring an elegant sheer and a subtle geo wave.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://www.a1blinds.co.uk/media/category_landingpages/allusion/cropped/1%20(4).jpg" alt="Featurette Image" style="height: 300px; width: 530px;margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <!--4left-->
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">unique benefits of Allusion Blinds</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">These provide a fresh take on shade, offering advantages over vertical blinds and curtains.
+
+                        <br>Flexible Boundary
+                        <br>Extremely well-liked as a movable room divider that allows for any orientation.
+                        <br>Expand
+                        <br>Patio doors, bi-folding doors, and bigger windows all showcase their exquisite appearance.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://optimise2.assets-servd.host/taboo-siskin/production/images/Allusion-Blinds/Product-Images/LL_Allusion_Vista_Snow_Main-4-panes_MAIL-3.jpg?w=1920&h=1080&q=80&fm=jpg&fit=min&crop=focalpoint&fp-x=0.5&fp-y=0.5&dm=1603728899&s=1521253cd833a94045a2fb0303f94355" class="img-fluid" alt="Featurette Image" style="height: 300px; width: 530px;margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+    <!--comments-->
+    <div class="comments-container">
+        <h2> Your Comment</h2>
+        <form id="comment-form">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div><br>
+            <div>
+                <label for="comment">Write Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+            </div><br>
+            <button type="submit">Submit</button><br><br>
+        </form>
+        <ul id="comments-list"> <h1><b>Comments</b></h1></ul>
+    </div>
+
+<script>
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.slide');
+    
+    let currentIndex = 0;
+    
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex >= slides.length) {
+        currentIndex = 0;
+      }
+      updateCarousel();
+    }
+    
+    function updateCarousel() {
+      const offset = -currentIndex * 25; /* 25% for each slide */
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+    
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+
+
+//localStorage.removeItem('comments');
+document.addEventListener('DOMContentLoaded', function() {
+    const commentsList = document.getElementById('comments-list');
+    const commentForm = document.getElementById('comment-form');
+
+    // Load comments from local storage on page load
+    loadComments();
+
+    // Event listener for form submission
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        // Save comment to local storage
+        saveComment(name, comment);
+
+        // Add new comment to UI below the form
+        const newCommentHTML = `<li><strong>${name}:</strong> ${comment}</li>`;
+        commentsList.insertAdjacentHTML('beforeend', newCommentHTML);
+
+        // Clear form fields
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+
+    // Function to load comments from local storage
+    function loadComments() {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.forEach(comment => {
+            const newComment = document.createElement('li');
+            newComment.innerHTML = `<strong>${comment.name}:</strong> ${comment.comment}`;
+            commentsList.appendChild(newComment);
+        });
+    }
+
+    // Function to save comment to local storage
+    function saveComment(name, comment) {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.push({ name, comment });
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
+});
+</script>
+
+    
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p style="margin-bottom: 5px;">The Inspired Decor</p>
+        <p style="margin-bottom: 5px;">123 Example Street, City</p>
+        <p style="margin-bottom: 0;">&copy; 2023 decor. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
