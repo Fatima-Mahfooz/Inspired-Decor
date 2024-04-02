@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+          
+        }
+        #left-section {
+            width: 30%;
+        }
+
+        #right-section {
+            width: 60%;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .winter-paragraph {
+            text-align: center;
+            color: #333;
+        }
+
+        #winter-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        #left-section {
+            width: 50%;
+            float: left;
+        }
+
+        #right-section {
+            width: 50%;
+            float: left;
+        }
+
+        hr {
+            border: 1px solid #673737;
+            margin: 20px 0;
+            
+        }
+
+        .winter-paragraph {
+            text-align: left;
+            color: #333;
+        }
+
+        .image-collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 150px; /* Set a fixed height for the image cards */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%; /* Set the height of the images to 70% of the .image-card height */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover .image {
+            transform: scale(1.1);
+        }
+        .containerd {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+     /* Adjust the gap between images */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .image-text {
+    margin-top: 10px; /* Adjust the spacing between image and text */
+    color: red;
+  }
+  .carousel-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        flex: 0 0 300px; /* Fixed size for each slide */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px; /* To make the images square-shaped */
+    }
+  .comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 20px;
+}
+        .footer {
+            background-color: rgb(69, 98, 128);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img src="" alt="" style="height: 60px; "></a>
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html" style="color: white;">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                          <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                          <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Blinds
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Roller Blinds.html">Roller Blinds</a></li>
+                            <li><a class="dropdown-item" href="Roman Blind.html">Roman Blind</a></li>
+                            <li><a class="dropdown-item" href="Outdoor Blind.html">Outdoor Blind</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" style="color: white;">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+                <div class="dropdown text-end" style="margin-right: 2%;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="margin-right: 100px ;">
+                      <li><a class="dropdown-item" href="signout.html">Sign out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <center><h1><i><b>Uncomplicated Style Worn in Various Ways</b></i></h1></center>
+    <br>
+    
+        <!-- Roller Blind -->
+        <div id="left-section">
+            <!-- Winter season home decor content on the left side -->
+            <h2 style="color: rgb(153, 46, 46);">&nbsp;&nbsp; Roman Blinds</h2 >
+            <h3>&nbsp;&nbsp; The Reasons Behind Roman Blinds</h3>
+            <hr width="600px">
+            <!-- Practical & Beautiful home decor paragraph and image on the right side -->
+            <div class="winter-paragraph">
+                <p>&nbsp;&nbsp;"simplicity that can be styled in a variety of ways. Roman blinds have the ability to add <br>&nbsp;&nbsp; warmth to any area, whether it be classic, contemporary, or something else entirely.<br>&nbsp;&nbsp; Not only are these shades incredibly attractive, but we also provide a wide range of <br>&nbsp;&nbsp; fabric
+                 
+                    choice enabling complete customization and readying them to fit your environment."</p>
+            </div> 
+        </div>
+        
+        <div class="image-collage">
+            <!-- Four images with card effect and hover effect -->
+            <div class="image-card">
+                <img class="image" src="https://media.istockphoto.com/id/537286704/photo/big-beautiful-walk-in-wardrobe-luxury-modern-home.jpg?s=612x612&w=0&k=20&c=00cJrJLnBC04F3E0xxYAyG01mbv551clDuwMVYSahek=" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://media.istockphoto.com/id/1472802617/photo/samples-of-roller-blind-fabrics-in-different-textures-and-colors-close-up-view-roman-curtain.jpg?s=612x612&w=0&k=20&c=4UfsM7cafa6CPToshBsWIBXPce1eTBOV1-jrX4AjE1U=" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://media.istockphoto.com/id/1402735034/photo/luxury-master-bedroom-with-elegant-and-modern-details.jpg?s=612x612&w=0&k=20&c=DWiYw7Vmk236v-0QhXNjvdlGhDmQyHYOQBns498xWks=" alt="Image 3">
+            </div>
+            <div class="image-card">
+                <img class="image" src="https://media.istockphoto.com/id/183850695/photo/green-themed-decor-in-bedroom-with-a-red-roman-blind.jpg?s=612x612&w=0&k=20&c=JaDsVy12f99W_cZjBwSyqOEoaelP3VueaxAFnzBxXgM=" alt="Image 4">
+            </div>
+        </div> <br><br>
+        <center><h1 style="color: red;">THE THRILL OF DISCOVERIES</h1></center><br><br><br>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/roman-blinds-inspired-decor-image-02.jpg alt="Image 1>
+
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/roman-blinds-inspired-decor-image-06.jpg" alt="Image 2">  
+            </div>
+            <div class="slide">
+                <img src="https://inspireddecor.co.za/wp-content/uploads/2020/11/roman-blinds-inspired-decor-image-03.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/236x/26/ab/9d/26ab9d4efa3231e0f0ef684cd2d42f10.jpg" alt="Image 4">
+                
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/236x/a1/62/6c/a1626c55cf1cd96be321da39e99d3017.jpg" alt="Image 5">
+              
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/236x/14/6a/30/146a30bd6febb07a3fdb4dc8d61f8f98.jpg" alt="Image 6">
+                
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/236x/61/84/7d/61847de52173b7d70370b5c00c7469a4.jpg" alt="Image 7">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/236x/d2/e0/f8/d2e0f8778657f303b96f909931fee1fa.jpg" alt="Image 8">
+          
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/236x/b1/52/e2/b152e231541aaaceb5640e7b04cc078b.jpg" alt="Image 9">
+                
+            </div>
+    </div><br><br><br>
+        <!--1left-->
+    <center><h2 style="color: black;margin-left: 90px;"> <b>Regarding Roman Blinds</b></h2></center><br>
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">Roman Blinds in Durban</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;"> Durban window coverings are the ideal finishing touch for your sunny Durban house or place of business since they block out the sun. The way roman shades stack up evenly when opened is what sets them apart from regular window coverings.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/174072202/photo/contemporary-bathroom.jpg?s=612x612&w=0&k=20&c=85XAEAnTaTREXxqmdlvTJp0It3lg-tLNRSNanM3XYGg=" class="img-fluid" alt="Featurette Image" style="height: 300px;margin-left: 70px; width: 530px;">
+            </div>
+        </div>
+    </div>
+    <!--2left-->
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">Roman shade lines and smooth, crisp pleats</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">Roman Shades' elegant, crisp pleats and lines give a room a luxurious feel without adding to its weight or bulk, which is sometimes the effect of heavier curtains. These blinds function by using fabric cording to gather material panels both horizontally and vertically.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/174660301/photo/estate-kitchen-house.jpg?s=612x612&w=0&k=20&c=wBTWUGkPq9VEbEpfbyATbLWJ_LeEoduv7cUq2_ps-_c=" class="img-fluid" alt="Featurette Image" style="height: 300px; width: 530px; margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <!--3left-->
+    
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">The Style Option That Is More Affordably Priced</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">These blinds are among the most customizable you'll ever find, with a wide selection of colors and fabrics.
+                        You may easily stay within your budget because the type of fabric you choose will determine the final cost.
+                        The degree to which your Roman blinds regulate light and temperature will depend largely on the thickness and quality of their materials.
+                        In the summer, thicker materials will radiate heat and light, while in the winter, they will effectively hold it in.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/183869923/photo/modern-kitchen-home-interior.jpg?s=612x612&w=0&k=20&c=PVVxSpSQx4P9swyOo-ffR5LDJiPd0rVkyzoXl8ITsiA=" alt="Featurette Image" style="height: 300px; width: 530px;margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <!--4left-->
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">The Ultimate  Blind</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">Last but not least, Roman blinds' ageless elegance is its best feature of all. Your blinds are an <a href="https://inspireddecor.co.za/roman-blinds/">eco-friendly fashion</a> option that will always be in style.
+
+    With our custom Roman Shades, you may find a chic substitute for curtains. Look through the Inspired Décor catalog to find ideas for your next makeover that are both space-efficient and simple to implement.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/170617321/photo/drapery.jpg?s=612x612&w=0&k=20&c=HVHJYK9jzh_Vxg95rvE2KE0f-4MehXAIp_ozCEHnUWM=" class="img-fluid" alt="Featurette Image" style="height: 300px; width: 530px;margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    
+    <!--comments-->
+    <div class="comments-container">
+        <h2> Your Comment</h2>
+        <form id="comment-form">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div><br>
+            <div>
+                <label for="comment">Write Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+            </div><br>
+            <button type="submit">Submit</button><br><br>
+        </form>
+        <ul id="comments-list"> <h1><b>Comments</b></h1></ul>
+    </div>
+
+<script>
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.slide');
+    
+    let currentIndex = 0;
+    
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex >= slides.length) {
+        currentIndex = 0;
+      }
+      updateCarousel();
+    }
+    
+    function updateCarousel() {
+      const offset = -currentIndex * 25; /* 25% for each slide */
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+    
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+
+
+//localStorage.removeItem('comments');
+document.addEventListener('DOMContentLoaded', function() {
+    const commentsList = document.getElementById('comments-list');
+    const commentForm = document.getElementById('comment-form');
+
+    // Load comments from local storage on page load
+    loadComments();
+
+    // Event listener for form submission
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        // Save comment to local storage
+        saveComment(name, comment);
+
+        // Add new comment to UI below the form
+        const newCommentHTML = `<li><strong>${name}:</strong> ${comment}</li>`;
+        commentsList.insertAdjacentHTML('beforeend', newCommentHTML);
+
+        // Clear form fields
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+
+    // Function to load comments from local storage
+    function loadComments() {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.forEach(comment => {
+            const newComment = document.createElement('li');
+            newComment.innerHTML = `<strong>${comment.name}:</strong> ${comment.comment}`;
+            commentsList.appendChild(newComment);
+        });
+    }
+
+    // Function to save comment to local storage
+    function saveComment(name, comment) {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.push({ name, comment });
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
+});
+</script>
+
+    
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p style="margin-bottom: 5px;">The Inspired Decor</p>
+        <p style="margin-bottom: 5px;">123 Example Street, City</p>
+        <p style="margin-bottom: 0;">&copy; 2023 decor. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
