@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+        }
+
+       
+
+.cnt {
+    text-align: left;
+    clear: left; /* Ensure the content starts below the images */
+    justify-content: first baseline;
+}
+
+        .cnt img{
+            float: inline-start;
+        }
+        .comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 20px;
+}
+        .footer {
+            background-color: rgb(69, 98, 128);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    article {
+      width: calc(33.333% - 20px);
+      margin-bottom: 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .like-btn {
+      display: inline-block;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .like-btn:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .like-count {
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+        
+       
+        
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img src="" alt="" style="height: 60px; "></a>
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration page .html" style="color: white;"></a>
+                    </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="login page.html" style="color: white;">Login </a>
+                          </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="Living Room Inspiration.html">Living ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                            <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                            <li><a class="dropdown-item" href="Roller Blinds.html">Roller Blinds</a></li>
+                            <li><a class="dropdown-item" href="Roman Blind.html">Roman Blind</a></li>                        
+                            <li><a class="dropdown-item" href="Outdoor Blind.html">Outdoor Blind</a></li>
+                            <li><a class="dropdown-item" href="Curtain.html">Curtains</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Blog.html" style="color: white;">Blog</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="About Us.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="About me.html">Contact me</a></li>                        
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+                <div class="dropdown text-end" style="margin-right: 2%;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="margin-right: 100px ;">
+                      <li><a class="dropdown-item" href="signout.html">Sign out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <header>
+        <h1>My Decor Blog</h1>
+      </header>
+      <main>
+        <article>
+          <img src="https://media.istockphoto.com/id/1344083240/photo/modern-living-room.webp?b=1&s=170667a&w=0&k=20&c=uSN2t4oCxtpVokTWnA2pKoL36Gyl-7gPUzr45igGWrE=" alt="Decor Image 1">
+          <h2>Modern Minimalist Living Room</h2>
+          <p>
+            The modern minimalist living room creates a calm and uncluttered environment that encourages reflection and relaxation by embodying simplicity, utility, and elegance. This design aesthetic, which emphasizes minimal items, clean lines, and neutral color schemes, embraces the maxim "less is more."
+            Every component in a contemporary minimalist living room has a function and adds to the overall harmony and balance of the area. With a focus on streamlined forms and subtle refinement, furniture items are meticulously chosen for both form and function. A minimalist coffee table or a streamlined sofa serve as statement pieces that ground the area without overpowering it, and the thoughtful use of negative space heightens the impression of space and openness.
+            The palette is dominated by neutral color schemes, with shades of white, beige, and gray producing a soothing background that makes the architectural features and tastefully chosen furnishings pop. Whether it is included through soft textiles like wool and linen or natural elements like wood and stone, texture is essential for creating visual interest and warmth in the room.
+            Another important component of a modern minimalist living room is lighting, which emphasizes natural light and straightforward, inconspicuous fixtures that go well with the entire design. Big windows let in the most light possible, making it easier to interact with nature and obfuscate the distinction between interior and outdoor areas.
+            Few accessories are used, emphasizing quality above quantity. A striking area rug, a sculptured vase, or a well-chosen piece of art can inject personality and dimension into the room without detracting from its minimalist theme.
+            Ultimately, a modern minimalist living room is a haven of elegance and simplicity, a place where calm, deliberate design, and clean lines come together to create a room that is at once classic and cutting edge.
+    
+          </p>
+          <button class="like-btn" onclick="likePost(1)">Like</button>
+          <span class="like-count">0</span>
+        </article>
+        <article>
+          <img src="https://media.istockphoto.com/id/1926054163/photo/modern-rustic-bedroom-interior.webp?b=1&s=170667a&w=0&k=20&c=wLimCAbTz-39JYJwjv5OA0K1m1ic20CES7ypT_zMPOA=" alt="Decor Image 2">
+          <br><h2>Cozy Rustic Bedroom</h2>
+          <p>
+            Cozy, comfortable, and connected to nature combine to provide a peaceful haven from the rush of everyday life in a rustic bedroom. This design approach highlights the attractiveness of organic materials and rustic touches to create a warm, peaceful environment.
+            The room's character and texture are enhanced by exposed brick walls and wooden beams, and the rustic atmosphere is further enhanced with worn-out wood floors or furnishings. Warm browns, subdued greens, and soft neutrals are examples of earthy tones that predominate in the color scheme and convey a sense of balance with the natural world.
+            The room's comfortable ambiance is greatly enhanced by the textiles, which include soft beds, cosy blankets, and plush area rugs that beckon you to repose. Natural light comes in through woven blinds or transparent curtains, creating a warm glow that highlights the room's cozy atmosphere.
+            Vintage decorations, wrought iron hardware, and antique furniture are examples of rustic elements that give a room a nostalgic and unique feel. Handmade accents, such as woven baskets or pottery, highlight artisanal skill and enhance the rustic appeal of the space.
+            You can forget about the worries of the outside world and enjoy the small pleasures of country living in this peaceful haven. Nestled in the timeless beauty of nature, a warm rustic bedroom offers a refuge of comfort and relaxation, perfect for lounging with a good book or simply enjoying a quiet night's sleep.
+          </p>
+          <button class="like-btn" onclick="likePost(2)">Like</button>
+          <span class="like-count">0</span>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1633119712778-30d94755de54?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEVsZWdhbnQlMjBNb2Rlcm4lMjBLaXRjaGVufGVufDB8fDB8fHww" alt="Decor Image 3">
+        <br><h2>Elegant Modern Kitchen</h2>
+          <p>
+            An elegant modern kitchen combines sleek design with usefulness to produce a visually appealing and incredibly efficient area. It is the pinnacle of sophistication, functionality, and contemporary style.
+            The appeal of the modern kitchen is defined by its new materials, clean lines, and minimalistic aesthetics. Exquisite cabinetry with modern finishes, including glossy lacquer or matte textures, radiates elegance and offers plenty of storage options to keep a space clear of clutter. The seamless appearance is further enhanced with integrated appliances, which guarantee a simplified and consistent design across the room.
+            The kitchen is precisely illuminated by well-placed lighting elements, such as under-cabinet LEDs and recessed ceiling lights, which improve both ambience and functionality. Large windows or glass doors let in the most natural light possible, enhancing the modern aesthetic by generating a light and airy ambiance.
+            Not only can energy-efficient appliances and smart technologies improve kitchen performance, but they also highlight the kitchen's dedication to convenience and sustainability.
+            While preserving a feeling of coherence and balance, contrasting textures and materials, such as natural wood accents against a backdrop of clean white cabinetry or marble countertops combined with sleek stainless steel equipment, offer depth and visual appeal to the room.
+            A sculptured island centerpiece or a striking pendant lamp fixture are examples of well chosen design pieces that act as focal points and give the kitchen a refined yet distinct look.
+            In the end, a tasteful modern kitchen is more than just a place to prepare meals; it's a refined sanctuary where modern design and culinary expertise collide. This culinary haven blends classic elegance and contemporary luxury, raising the bar on cooking and dining experiences whether you're cooking a gourmet dinner or hosting guests.
+    
+          </p>
+          <button class="like-btn" onclick="likePost(3)">Like</button>
+          <span class="like-count">0</span>
+        </article>
+        <article>
+          <img src="https://media.istockphoto.com/id/1414190207/photo/3d-rendering-of-a-luxurious-restaurant-interior.webp?b=1&s=170667a&w=0&k=20&c=kJxLihk6FHqjBxQhpc0NjNn1864Clq1bbLZx7efHhVk=" alt="Decor Image 4">
+          <br><h2>Elegant Industrial Dining Space</h2>
+          <p>
+            A trendy industrial dining room combines industrial components with chic design to create an enthralling environment for dining and entertaining. It is the perfect example of the union of urban refinement and raw appeal.The industrial theme is supported with exposed brick walls, concrete flooring, and metal elements, which give the space personality and authenticity. These unfinished materials give the area a feeling of urban gritty and history while also bringing visual appeal and character.A defining characteristic of industrial design is the contrast between raw and sophisticated features. With their subtle elegance, sleek, minimalist furniture pieces made of wood, metal, or a combination of the two, serve as the room's focal point. Rustic charm is emitted by industrial-style dining tables with reclaimed wood tops and metal frames, and cozy seating options like upholstered or leather seats
+            Huge, eye-catching ceiling-mounted lighting fixtures, such exposed bulb chandeliers or pendant lights in an industrial style, act as focal points and provide a cozy, inviting glow to the room. The walls are decorated with large mirrors or bright, graphic artwork that draws the eye and adds excitement to the space. Use plush materials in subdued hues and rich textures, such as area rugs, draperies, or toss pillows, to soften the industrial edges and bring coziness to the room. A variety of natural accents, such fresh flowers or potted plants, give the space a burst of color and vitality while counterbalancing the industrial style with a cozy, natural feel. 
+            All things considered, a sleek industrial dining room is a fashionable blend of modern elegance and urban edge, providing a sophisticated backdrop for both special occasions and private meals. This eating area is likely to excite and amaze with its stylish design and industrial accents.
+          </p>
+          <button class="like-btn" onclick="likePost(4)">Like</button>
+          <span class="like-count">0</span>
+        </article>
+        <article>
+          <img src="https://media.istockphoto.com/id/1463538005/photo/modern-art-deco-interior-design-of-apartment-living-room-with-sofa-classical-armchairs-accent.webp?b=1&s=170667a&w=0&k=20&c=EJHX9O2zHxTF61k7EPJThTgm2EuKERWjNdgBygoxL74=" alt="Decor Image 5">
+          <br><h2>Living Room: Bohemian Eclectic Style</h2>
+          <p>
+            A living room with a bohemian eclectic design is a colorful tapestry of culture, color, and texture that reflects a carefree approach to design that values uniqueness and ingenuity.A visually dynamic and appealing atmosphere is created by combining a bold and adventurous combination of patterns, colors, and textures, which is at the core of this design. The space is anchored by layered rugs of various sizes and designs, which give the floor warmth and depth and serve as a base for the varied assortment of furniture.A Bohemian living room's seating arrangements are frequently defined by an eclectic mix of materials, forms, and designs. Vintage armchairs, floor cushions, and poufs are combined with low-slung sofas covered in rich, textured fabrics to create an eclectic seating area that promotes unwinding and conversation.
+            The room is embellished with a diverse range of ornamental elements that showcase a worldwide style influenced by various cultures and travels. An eclectic combination of artwork and memorabilia adds individuality and charm to the walls and shelves, while handcrafted fabrics like Moroccan rugs, embroidered throw cushions, and vibrant tapestries offer a bohemian touch. Natural accents like plants and woven baskets give the space a feeling of vibrancy and vigor and give it a calm, natural feel. A warm, inviting glow is generated by soft, ambient lighting from quirky fixtures, such Turkish lanterns or old chandeliers, creating a pleasant, private ambiance.
+            The secret to creating a bohemian eclectic look is to embrace individuality and self-expression, enabling each piece to weave a unique tale and add to the room's rich tapestry. A living room that has been inspired by Bohemian culture is a lively haven where you may embrace your individuality and creativity with its striking blend of colors, textures, and cultural elements.
+          </p>
+          <button class="like-btn" onclick="likePost(5)">Like</button>
+          <span class="like-count">0</span>
+        </article>
+        <article>
+          <img src="https://media.istockphoto.com/id/1796410988/photo/bathroom-with-vertical-garden.webp?b=1&s=170667a&w=0&k=20&c=E5trJoB2MzfIh2614mCgObsZrsUu5FeHxlIfkSYY-N8=" alt="Decor Image 6">
+          <br><h2>Serene Spa Bathroom</h2>
+          <p>
+            A peaceful haven that epitomizes rest, renewal, and opulent luxury is a spa bathroom. This design offers a wonderful getaway from the strains of daily life by creating a sanctuary within the home, modeled after the tranquility of spa environments.A tranquil spa bathroom is characterized by its focus on establishing a relaxing and tranquil ambiance with a tasteful combination of design components. The room is dominated by delicate, neutral color schemes that evoke airiness and peace in hues of white, beige, and soft pastels. These soft colors create a spa-like atmosphere that encourages calm and relaxation.
+            A feeling of openness and simplicity is created by the peaceful aesthetic, which is enhanced by simple and clean design components. Modern, sleek fixtures and fittings give the room a hint of subtle refinement while adding a touch of contemporary elegance. Examples include frameless glass shower enclosures, minimalist vanities, and streamlined faucets.
+            To add warmth and organic beauty to a space, natural materials like stone, wood, and bamboo are frequently used. Pebble floors and natural stone worktops are examples of textured surfaces that provide tactile appeal and visual intrigue, enhancing the spa-like atmosphere through a sensory experience.
+            A calm environment is largely dependent on thoughtful lighting design, with soft, diffused lighting producing a cozy, warm glow. Candlelight and dimmer switches enhance the ambience, letting you alter the lighting to fit your mood and create the ideal setting for unwinding.The focus is on useful and practical objects that improve the spa experience, with minimal accessories and design aspects. Elevate your bathing experience with spa-inspired features like a deep soaking tub or a rainfall showerhead, and add a touch of decadence with luxurious bath linens, fragrant candles, and essential oil diffusers
+          </p>
+          <button class="like-btn" onclick="likePost(6)">Like</button>
+          <span class="like-count">0</span>
+        </article>
+      </main>
+      <script>
+        // Initialize the like count for each post
+        const likeCounts = [0, 0, 0, 0, 0, 0];
+    
+        // Function to handle the like button click
+        function likePost(postIndex) {
+          // Increment the like count for the post
+          likeCounts[postIndex]++;
+    
+          // Update the like count display
+          const likeCountElement = document.querySelector(`.like-count:nth-child(${postIndex + 1})`);
+          likeCountElement.textContent = likeCounts[postIndex];
+        }
+      </script>
+   
+    <div class="comments-container">
+        <h2> Your Comment</h2>
+        <form id="comment-form">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div><br>
+            <div>
+                <label for="comment">Write Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+            </div><br>
+            <button type="submit">Submit</button><br><br>
+        </form>
+        <ul id="comments-list"> <h1><b>Comments</b></h1></ul>
+    </div>
+    
+    <script>
+        //localStorage.removeItem('comments');
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentsList = document.getElementById('comments-list');
+        const commentForm = document.getElementById('comment-form');
+    
+        // Load comments from local storage on page load
+        loadComments();
+    
+        // Event listener for form submission
+        commentForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+    
+            // Save comment to local storage
+            saveComment(name, comment);
+    
+            // Add new comment to UI below the form
+            const newCommentHTML = `<li><strong>${name}:</strong> ${comment}</li>`;
+            commentsList.insertAdjacentHTML('beforeend', newCommentHTML);
+    
+            // Clear form fields
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+    
+        // Function to load comments from local storage
+        function loadComments() {
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.forEach(comment => {
+                const newComment = document.createElement('li');
+                newComment.innerHTML = `<strong>${comment.name}:</strong> ${comment.comment}`;
+                commentsList.appendChild(newComment);
+            });
+        }
+    
+        // Function to save comment to local storage
+        function saveComment(name, comment) {
+            const comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.push({ name, comment });
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+    });
+    </script>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="margin-bottom: 5px;">The Inspired Decor</p>
+            <p style="margin-bottom: 5px;">123 Example Street, City</p>
+            <p style="margin-bottom: 0;">&copy; 2023 Decor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
