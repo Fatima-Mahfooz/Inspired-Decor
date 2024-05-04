@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /secrets/
+
+User-agent: Googlebot
+Allow: /public/
+Disallow: /private/
+
+User-agent: Bingbot
+Allow: /public/
+Disallow: /private/
+
+Sitemap:https://inspireddecor.me/sitemap.xml
