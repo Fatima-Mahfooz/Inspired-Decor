@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 100px;
+        }
+
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+          
+        }
+h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: #28913b;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+         #left-section {
+            width: 30%;
+        }
+
+        #right-section {
+            width: 60%;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .winter-paragraph {
+            text-align: center;
+            color: #333;
+        }
+
+        #winter-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        #left-section {
+            width: 50%;
+            float: left;
+        }
+
+        #right-section {
+            width: 50%;
+            float: left;
+        }
+
+        hr {
+            border: 1px solid #673737;
+            margin: 20px 0;
+            width: 52%;
+        }
+
+        .winter-paragraph {
+            text-align: left;
+            color: #333;
+        }
+
+        .image-collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 150px; /* Set a fixed height for the image cards */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%; /* Set the height of the images to 70% of the .image-card height */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card:hover .image {
+            transform: scale(1.1);
+        }
+                .comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comments-list li {
+    margin-bottom: 20px;
+}
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img src="" alt="" style="height: 60px; "></a>
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration page .html" style="color: white;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login page.html" style="color: white;">Login </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="Living Room Inspiration.html">Living ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                            <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                            <li><a class="dropdown-item" href="Roller Blinds.html">Roller Blinds</a></li>
+                            <li><a class="dropdown-item" href="Roman Blind.html">Roman Blind</a></li>                        
+                            <li><a class="dropdown-item" href="Outdoor Blind.html">Outdoor Blind</a></li>
+                            <li><a class="dropdown-item" href="Curtain.html">Curtains</a></li>
+                            <li><a class="dropdown-item" href="Bathroom.html">Bathroom Inspired Decor</a></li>
+                            <li><a class="dropdown-item" href="Kitchen decor.html">Kitchen Decor</a></li>
+                            <li><a class="dropdown-item" href="Bookshelves.html">Bookshelves Inspirational Decor</a></li>
+                            <li><a class="dropdown-item" href="Decorative pillows.html">Decorative Pillows</a></li>
+                            <li><a class="dropdown-item" href="Rugs.html">Rugs Decor</a></li>
+                            <li><a class="dropdown-item" href="Accent tables&vase.html">Accent tables&vases</a></li>
+                            <li><a class="dropdown-item" href="Wall Art.html">Wall Art Decor</a></li>
+                            <li><a class="dropdown-item" href="exteriorremodel.html">Exterior Remodel Decor</a></li>
+                            <li><a class="dropdown-item" href="garden.html">Home Garden Decor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Blog.html" style="color: white;">Blog</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            About
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="About Us.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="About me.html">Contact me</a></li>                        
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+                <div class="dropdown text-end" style="margin-right: 2%;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="margin-right: 100px ;">
+                      <li><a class="dropdown-item" href="signout.html">Sign out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav><br><br><br><br>
+    <center><h1><i>Exterior Remodel Design</i></h1></center>
+    <br>
+    
+       <!-- Spring season -->
+       <div id="left-section">
+        <!-- Winter season home decor content on the left side -->
+        <h2>Improve Your Outdoors with <br> Modern Exterior Remodel Design</h2>
+        <hr>
+        <!-- Spring season home decor paragraph and image on the right side -->
+        <div class="winter-paragraph">
+            <p>"Renovate your outdoor area with a useful and aesthetically pleasing <br> exterior makeover  design. In order to create a welcoming space for <br> gathering and relaxing, incorporate contemporary elements like <br> sleek outdoor furniture, understated planting, and well-placed lighting. <br> Makeover your outside space to create a chic haven that fits your lifestyle <br>and accentuates the beauty of your house."</p>
+        </div>
+        
+    </div>
+    
+    <div class="image-collage">
+        <!-- Four images with card effect and hover effect -->
+        <div class="image-card">
+            <img class="image" src="https://www.thespruce.com/thmb/0Tgr4XRT7BrCj2rIWezgjW_P6Cg=/673x467/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-16330438631-934c73d852744474ae0132212044df2c.jpg" alt="Image 1">
+        </div>
+        <div class="image-card">
+            <img class="image" src="https://www.thespruce.com/thmb/iM8S-oz_Hdf0Hnqs-5134285mMg=/315x236/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-601799249-5890dfb55f9b5874ee7dcd57.jpg" alt="Image 2">
+        </div>
+        <div class="image-card">
+            <img class="image" src="https://media.istockphoto.com/id/1319742252/photo/home-design.webp?b=1&s=170667a&w=0&k=20&c=ueUAmuGfm1RLUlZdx44IYvdL0OX0EnR_IiUY2Nwtg_s=" alt="Image 3">
+        </div>
+        <div class="image-card">
+            <img class="image" src="https://media.istockphoto.com/id/1674436657/photo/modern-luxurious-villa-with-palms-garden.webp?b=1&s=170667a&w=0&k=20&c=gh5djb6WQSFpIStT-dE4aYIzRQQYq_Et99If2mB6_So=" alt="Image 4">
+        </div>
+    </div> <br><br>
+        <!--1left-->
+    <center><h2 style="color: black;margin-left: 90px;"> <b></b></h2></center><br>
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">Inspectors in External Remodel Design</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">As they create the building's structure, engineers and contractors carefully carry out the exterior makeover design, consulting comprehensive drawings along the way. A committed team of construction project inspectors pays careful visits to the site, making sure that all aspects of the renovation comply with safety and quality standards, ensuring that the outdoor area is successfully transformed.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/1314926640/photo/engineers-and-contractors-hold-the-plan-and-point-it-at-the-structure-of-the-building-the.webp?b=1&s=170667a&w=0&k=20&c=NFarUy_FzxooeJrAPinSCXdMCq1uThtChrC8Byth1cw=" class="img-fluid" alt="Featurette Image" style="height: 300px;margin-left: 70px; width: 530px;">
+            </div>
+        </div>
+    </div>
+    <!--2left-->
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">Brick by Brick: The Artistry of Residential Home Exterior Bricking</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;">Watch as the painstaking process of bricklaying transforms the façade of a residential property in a magnificent way. Expert masons place each brick with care, eventually realizing the vision with knowledge and skill. Observe the ageless elegance of brickwork as it accentuates the facade of the house, adding character and sturdiness that will endure for many years.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/1332256685/photo/residential-house-being-built.webp?b=1&s=170667a&w=0&k=20&c=4FeIyMWfIUA6yPnwreaAJSz2R2V6TW5JhtTYrIfbfW8=" class="img-fluid" alt="Featurette Image" style="height: 300px; width: 530px; margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    <!--3left-->
+    
+    <hr style="width: 670px;margin-left: 90px;">
+    <div class="containerd">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-start">
+                <div>
+                    <h4 style="color: rgb(153, 43, 43); margin-left: 90px;">A Modern Luxury Retreat - 3D Rendering</h4>
+                    <p class="lead" style="text-size-adjust: 45px; font-size: 25px; font-family: Bahnschrift; margin-left: 90px;"></a>With this intriguing 3D model of a cozy house set among an amazing twilight environment, you can lose yourself in the seduction of modern luxury. Enormous windows drip with warm ambient lighting that softens the edges of elegant architectural components and comfortable furnishings. As you imagine living in this exquisitely created haven, discover the ideal fusion of comfort and sophistication.</p>
+                    <!-- Additional content goes here -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://media.istockphoto.com/id/1345420568/photo/modern-cozy-house-in-luxury-style-with-tropica-plants.jpg?s=612x612&w=0&k=20&c=ZyoeDlKD9B8LqMLj_Qr6fUybDSL_YZgxwrHsqLQ4Uso=" alt="Featurette Image" style="height: 300px; width: 530px;margin-left: 70px;">
+            </div>
+        </div>
+    </div>
+    
+         <br><br>
+        <br>
+        <div class="comments-container">
+            <h2> Your Comment</h2>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                <div>
+                    <label for="comment">Write Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+                </div><br>
+                <button type="submit">Submit</button><br><br>
+            </form>
+            <ul id="comments-list"> <h1><b>Comments</b></h1></ul>
+        </div>
+        
+        <script>
+            //localStorage.removeItem('comments');
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentsList = document.getElementById('comments-list');
+            const commentForm = document.getElementById('comment-form');
+        
+            // Load comments from local storage on page load
+            loadComments();
+        
+            // Event listener for form submission
+            commentForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const comment = document.getElementById('comment').value;
+        
+                // Save comment to local storage
+                saveComment(name, comment);
+        
+                // Add new comment to UI below the form
+                const newCommentHTML = `<li><strong>${name}:</strong> ${comment}</li>`;
+                commentsList.insertAdjacentHTML('beforeend', newCommentHTML);
+        
+                // Clear form fields
+                document.getElementById('name').value = '';
+                document.getElementById('comment').value = '';
+            });
+        
+            // Function to load comments from local storage
+            function loadComments() {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.forEach(comment => {
+                    const newComment = document.createElement('li');
+                    newComment.innerHTML = `<strong>${comment.name}:</strong> ${comment.comment}`;
+                    commentsList.appendChild(newComment);
+                });
+            }
+        
+            // Function to save comment to local storage
+            function saveComment(name, comment) {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.push({ name, comment });
+                localStorage.setItem('comments', JSON.stringify(comments));
+            }
+        });
+        </script>
+    <!--Footer-->
+<footer style="background-color: rgb(69, 98, 128); padding: 20px; text-align: center; color: white; width: 100%; position: absolute;">
+    <div class="containerd">
+      <p style="margin-bottom: 5px;">Tech&Gads</p>
+      <p style="margin-bottom: 5px;">123 Example Street, City</p>
+      <p style="margin-bottom: 0;">&copy; 2023 Tech&Gads. All rights reserved.</p>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+</body>
+</html>
