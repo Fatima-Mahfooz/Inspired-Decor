@@ -1,96 +1,162 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <style>
-      body {
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
+<html lang="en">
 
-.container {
-  width: 300px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+        body {
+            background-color: #e1e1e0 !important;
+            margin: 0;
+            padding: 0;
+        }
 
-button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+        .navbar {
+          background-color: rgb(69, 98, 128) !important;
+          
+        }
+    </style>
+    <title>www.The Inspired Decor.com</title>
+</head>
 
-button[type="submit"]:hover {
-  background-color: #45a049;
-}
-  </style>
-  <body>
-    <div class="container">
-      <h2>Registeration</h2>
-      <form id="registration-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required />
-
-        <button type="submit">Register</button>
-      </form>
+<body>
+        <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img src="" alt="" style="height: 60px; "></a>
+            <a class="navbar-brand" href="#" style="font-size: 35px; color:white; "><u
+                    style="font-family: 'Times New Roman'; ">The Inspired Decor</u></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration page .html" style="color: white;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login page.html" style="color: white;">Login </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            Inspiration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ROOM INSPIRATION.html">ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="Living Room Inspiration.html">Living ROOM INSPIRATION</a></li>
+                            <li><a class="dropdown-item" href="STYLE TIPS.html">STYLE TIPS</a></li>
+                            <li><a class="dropdown-item" href="SEASONAL HOMES.html">SEASONAL HOMES</a></li>
+                            <li><a class="dropdown-item" href="Roller Blinds.html">Roller Blinds</a></li>
+                            <li><a class="dropdown-item" href="Roman Blind.html">Roman Blind</a></li>                        
+                            <li><a class="dropdown-item" href="Outdoor Blind.html">Outdoor Blind</a></li>
+                            <li><a class="dropdown-item" href="Curtain.html">Curtains</a></li>
+                            <li><a class="dropdown-item" href="Bathroom.html">Bathroom Inspired Decor</a></li>
+                            <li><a class="dropdown-item" href="Kitchen decor.html">Kitchen Decor</a></li>
+                            <li><a class="dropdown-item" href="Bookshelves.html">Bookshelves Inspirational Decor</a></li>
+                            <li><a class="dropdown-item" href="Decorative pillows.html">Decorative Pillows</a></li>
+                            <li><a class="dropdown-item" href="Rugs.html">Rugs Decor</a></li>
+                            <li><a class="dropdown-item" href="Accent tables&vase.html">Accent tables&vases</a></li>
+                            <li><a class="dropdown-item" href="Wall Art.html">Wall Art Decor</a></li>
+                            <li><a class="dropdown-item" href="exteriorremodel.html">Exterior Remodel Decor</a></li>
+                            <li><a class="dropdown-item" href="garden.html">Home Garden Decor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Blog.html" style="color: white;">Blog</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            About
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="About Us.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="About me.html">Contact me</a></li>                        
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="cursor: pointer; background: #b4b5b3; color: #fff;">Search</button>
+                </form>
+                <div class="dropdown text-end" style="margin-right: 2%;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="margin-right: 100px ;">
+                      <li><a class="dropdown-item" href="signout.html">Sign out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav><br><br><br><br><br><br><br>
+        <!-- Registration -->
+        <center>
+            <div class="container registration">
+                <form>
+                    <h1 class="h3 mb-3 fw-normal">Create an Account</h1>
+                   
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+                                <label for="floatingName">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <br><div class="form-floating">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                                <label for="floatingEmail">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <br><div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <br><div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" value="agree_terms"> I agree to the terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="login page.html" class="btn btn-lg btn-primary w-50" role="button">Register</a>
+                        </div>
+                    
+                </form>
+            </div>
+          </center>
+    <!--Footer--> <br><br><br>
+<footer style="background-color: rgb(69, 98, 128); padding: 20px; text-align: center; color: white; width: 100%; position: absolute;">
+    <div class="containerd">
+      <p style="margin-bottom: 5px;">Tech&Gads</p>
+      <p style="margin-bottom: 5px;">123 Example Street, City</p>
+      <p style="margin-bottom: 0;">&copy; 2023 Tech&Gads. All rights reserved.</p>
     </div>
-    <script>
-        document.getElementById("registration-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  // Get form values
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-  var confirmPassword = document.getElementById("confirm-password").value;
-
-  // Validate passwords match
-  if (password !== confirmPassword) {
-    alert("Passwords do not match.");
-    return;
-  }
-
-  // Registration logic here
-
-});
-function openRegistrationPage() {
-  window.open("registration.html", "_blank");
-}
-    </script>
-  </body>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+</body>
 </html>
